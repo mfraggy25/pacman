@@ -135,10 +135,14 @@ function startGame() {
   );
 
   const ghosts = [
-    new Ghost(5, 188, randomMovement, OBJECT_TYPE.BLINKY),
-    new Ghost(4, 209, randomMovement, OBJECT_TYPE.PINKY),
-    new Ghost(3, 250, randomMovement, OBJECT_TYPE.INKY),
-    new Ghost(2, 251, randomMovement, OBJECT_TYPE.CLYDE),
+    new Ghost(5, 343, randomMovement, OBJECT_TYPE.BLINKY),
+    new Ghost(4, 375, randomMovement, OBJECT_TYPE.PINKY),
+    new Ghost(3, 405, randomMovement, OBJECT_TYPE.INKY),
+    new Ghost(2, 435, randomMovement, OBJECT_TYPE.CLYDE),
+    new Ghost(5, 346, randomMovement, OBJECT_TYPE.BLINKY),
+    new Ghost(4, 372, randomMovement, OBJECT_TYPE.PINKY),
+    new Ghost(3, 462, randomMovement, OBJECT_TYPE.INKY),
+    new Ghost(2, 495, randomMovement, OBJECT_TYPE.CLYDE),
   ];
 
   timer = setInterval(() => gameLoop(pacman, ghosts), GLOBAL_SPEED);

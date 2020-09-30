@@ -748,7 +748,7 @@ function startGame() {
   document.addEventListener("keydown", function (e) {
     return pacman.handleKeyInput(e, gameBoard.objectExist.bind(gameBoard));
   });
-  var ghosts = [new _Ghost.default(5, 188, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.BLINKY), new _Ghost.default(4, 209, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.PINKY), new _Ghost.default(3, 250, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.INKY), new _Ghost.default(2, 251, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.CLYDE)];
+  var ghosts = [new _Ghost.default(5, 343, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.BLINKY), new _Ghost.default(4, 375, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.PINKY), new _Ghost.default(3, 405, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.INKY), new _Ghost.default(2, 435, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.CLYDE), new _Ghost.default(5, 346, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.BLINKY), new _Ghost.default(4, 372, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.PINKY), new _Ghost.default(3, 462, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.INKY), new _Ghost.default(2, 495, _ghostMoves.randomMovement, _setup.OBJECT_TYPE.CLYDE)];
   timer = setInterval(function () {
     return gameLoop(pacman, ghosts);
   }, GLOBAL_SPEED);
@@ -784,7 +784,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51042" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61967" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
